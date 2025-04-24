@@ -5,7 +5,6 @@ Squares API is a .NET Core Web API that detects squares from 2D point coordinate
 ---
 
 ## ✨ Features
-
 - Import, add, and delete points
 - Detect unique squares
 - RESTful API with Swagger UI
@@ -18,20 +17,24 @@ Squares API is a .NET Core Web API that detects squares from 2D point coordinate
 ```bash
 dotnet build
 dotnet run
+```
+Open Swagger: http://localhost:5000/swagger
 
 ---
 
-Open Swagger: http://localhost:8080/swagger
+## 🐳 Run with Docker
 
+Clone the project:
 
-## ------------ ## -----------------
-
+```bash
+git clone https://github.com/YOUR_USERNAME/SquaresAPI.git
+cd SquaresAPI
 docker build -t squares-api .
-docker run -d -p 5000:8080 --name squares-api-container squares-api
+docker run -d -p 5000:80 squares-api
+```
+Open: http://localhost:5000
 
 ---
-
-Open: http://localhost:5000/swagger
 
 # 📌 API Endpoints
 Method	Endpoint	Description
