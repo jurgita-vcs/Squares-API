@@ -36,7 +36,8 @@ Open: http://localhost:5000
 
 ---
 
-# 📌 API Endpoints
+## 📌 API Endpoints
+
 | Method | Endpoint         | Description           |
 |--------|------------------|-----------------------|
 | POST   | `/points/import` | Import list of points |
