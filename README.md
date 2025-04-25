@@ -27,7 +27,7 @@ Open Swagger: http://localhost:5000/swagger
 Clone the project:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SquaresAPI.git
+git clone https://github.com/jurgita-vcs/SquaresAPI.git
 cd SquaresAPI
 docker build -t squares-api .
 docker run -d -p 5000:80 squares-api
@@ -37,10 +37,12 @@ Open: http://localhost:5000
 ---
 
 # 📌 API Endpoints
-Method	Endpoint	Description
-POST	/points/import	Import list of points
-POST	/points	Add a single point
-GET	/points	Get all points
-DELETE	/points/{id}	Delete point by ID
-GET	/squares	Get detected squares
+| Method | Endpoint         | Description           |
+|--------|------------------|-----------------------|
+| POST   | `/points/import` | Import list of points |
+| POST   | `/points`        | Add a single point    |
+| GET    | `/points`        | Get all points        |
+| DELETE | `/points/{id}`   | Delete point by ID    |
+| GET    | `/squares`       | Get detected squares  |
+
 
