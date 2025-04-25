@@ -29,6 +29,13 @@ builder.Services.AddSwaggerGen(options =>
 //Build app
 var app = builder.Build();
 
+//Create the SQLite database if it doesn't exist
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<PointsContext>();
+    db.Database.EnsureCreated();
+}
+
 if (app.Environment.IsDevelopment() ||
     Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true")
 {
